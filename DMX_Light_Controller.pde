@@ -7,7 +7,8 @@ import processing.serial.*;
 
 DmxP512 dmxOutput;
 int universeSize = 128;
-String DMXPRO_PORT = "/dev/cu.usbserial-EN210483"; //case matters ! on windows port must be upper cased.
+String DMXPRO_PORT = "/dev/cu.usbserial-EN210483"; // This is the port that is working on OSX // Had to install the drivers mentioned here www.ftdichip.com/Drivers/VCP.htm // case matters ! on windows port must be upper cased.
+// String DMX_PORT = "/dev/serial/by-id/usb-ENTTEC_DMX_USB_Pro_EN210483-if00-port0" // This is the port that seems to work on the Raspberry Pi // Part of this is the serial number of the device so it will have to be edited by anyone using a different device
 int DMXPRO_BAUDRATE = 115000;
 
 import controlP5.*;
